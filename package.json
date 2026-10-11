@@ -1,0 +1,11 @@
+{
+  "name": "floating-wardrobe",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "generate": "node scripts/generate-images.mjs",
+    "cutout": "node scripts/generate-images.mjs --from-photos"
+  },
+  "engines": { "node": ">=18" }
+}

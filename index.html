@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Floating Wardrobe SS24</title>
+  <meta name="description" content="스크롤하면 옷의 재질에 따라 소리를 내며 떠다니는 패션 오브젝트들">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="backdrop" aria-hidden="true">
+    <span>SPRING</span><span>SUMMER</span><span>2024</span>
+  </div>
+
+  <main id="stage" aria-label="떠다니는 컬렉션"></main>
+  <div id="spacer"></div>
+
+  <aside id="caption" aria-live="polite">
+    <p class="kicker" id="cap-kicker">Scroll</p>
+    <h2 id="cap-name">Floating Wardrobe</h2>
+    <p id="cap-concept">스크롤하면 옷들이 각자의 재질대로 움직이고 소리를 냅니다.</p>
+  </aside>
+
+  <button id="sound-toggle" type="button" aria-pressed="false">Sound off</button>
+
+  <section id="intro">
+    <p class="kicker">Paris Menswear · Spring/Summer 2024</p>
+    <h1>Floating<br><em>Wardrobe</em></h1>
+    <p class="lede">천은 사각사각, 비즈는 찰랑찰랑, 가죽은 삐걱.<br>스크롤에 맞춰 재질마다 다른 소리가 납니다.</p>
+    <button id="enter" type="button">Enter with sound</button>
+    <button id="enter-mute" type="button" class="ghost">소리 없이 보기</button>
+  </section>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
